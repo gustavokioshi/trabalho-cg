@@ -34,7 +34,8 @@ static void display(void) {
     glViewport(width/2, 0, width/2, height/2);//Viewport direita baixo
     glLoadIdentity();
     glPushMatrix(); //armazena a matriz corrente
-    glRotatef(graus, 1, 0, 0);                //responsavel pela rotac�o do objeto
+    glRotatef(45, 1, 0, 0);                //responsavel pela rotac�o do objeto
+    glRotatef(graus, 0, 0, 1);                //responsavel pela rotac�o do objeto
     gluPerspective(70.0, 1.0, 2.5, 50.0); //define uma proje��o perspectiva
     gluLookAt(0.0, 0.0, 4.5,
               0.0, 0.0, 0.0,
